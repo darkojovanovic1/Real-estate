@@ -15,7 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 32,
+        grabCursor:true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
