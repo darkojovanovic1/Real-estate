@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 :root {
   --header-height: 3.5rem;
   --first-color: hsl(228, 66%, 53%);
@@ -149,15 +147,19 @@ body.dark-theme {
 .dark-theme .subscribe-description {
   color: var(--text-color);
 }
-.dark-theme::-webkit-scrollbar{
+
+.dark-theme::-webkit-scrollbar {
   background-color: hsl(228, 4%, 15%);
 }
-.dark-theme::-webkit-scrollbar-thumb{
+
+.dark-theme::-webkit-scrollbar-thumb {
   background-color: hsl(228, 4%, 25%);
 }
-.dark-theme::-webkit-scrollbar-thumb:hover{
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsl(228, 4%, 35%);
 }
+
 .container {
   max-width: 1024px;
   margin-left: 1.5rem;
@@ -590,16 +592,17 @@ body.dark-theme {
 
 
 /*=============== CONTACT ===============*/
-.contact-container{
+.contact-container {
   row-gap: 2rem;
 }
-.contact-images{
+
+.contact-images {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.contact-img{
+.contact-img {
   width: 250px;
   height: 300px;
   overflow: hidden;
@@ -608,40 +611,47 @@ body.dark-theme {
   margin: auto;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
 }
-.contact-description{
+
+.contact-description {
   font-size: var(--small-font-size);
   margin-bottom: 2.5rem;
 }
-.contact-card{
+
+.contact-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem .75rem; 
+  gap: 1.25rem .75rem;
 }
-.contact-card-box{
+
+.contact-card-box {
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
   padding: 1.25rem .75rem;
   border-radius: .5rem;
   transition: .3s;
 }
-.contact-card-info{
+
+.contact-card-info {
   display: flex;
   font-display: column;
   align-items: flex-start;
   column-gap: 0.75rem;
   margin-bottom: 1.25rem;
 }
-.contact-card i{
+
+.contact-card i {
   padding: 6px;
   background-color: var(--first-color-lighten);
   border-radius: 6px;
   font-size: 1.25rem;
   color: var(--first-color);
 }
-.contact-card-title{
+
+.contact-card-title {
   font-size: var(--normal-font-size);
 }
-.contact-card-button{
+
+.contact-card-button {
   font-size: var(--small-font-size);
   padding: 14px 0;
   width: 100%;
@@ -651,13 +661,16 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
   box-shadow: none;
 }
-.contact-card-button:hover{
+
+.contact-card-button:hover {
   background-color: var(--first-color);
   color: #fff;
 }
-.contact-card-box:hover{
+
+.contact-card-box:hover {
   box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
 }
+
 /*=============== SUBSCRIBE ===============*/
 .subscribe {
   padding: 2.5rem 0;
@@ -721,6 +734,7 @@ body.dark-theme {
 .footer-content,
 .footer-links {
   display: grid;
+  justify-content: center;
 }
 
 .footer-content {
@@ -745,11 +759,12 @@ body.dark-theme {
 .footer-link:hover {
   color: var(--title-color);
 }
-.footer-socal-wrapper{
+
+.footer-socal-wrapper {
   display: flex;
   column-gap: 1rem;
 }
- 
+
 
 .footer-social-link {
   font-size: 1.25rem;
@@ -828,186 +843,244 @@ body.dark-theme {
   bottom: 8rem;
 }
 
-
-@media screen and (min-width: 1023px) {
-  .section{
+@media screen and (min-width: 1024px) {
+  .section {
     padding: 7.5rem 0 1rem;
   }
-  .section-title{
+
+  .section-title {
     font-size: 2.25rem;
   }
-  .section-subtitle{
+
+  .section-subtitle {
     font-size: var(--normal-font-size);
   }
-  .nav{
+
+  .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
-  .nav-menu{
+
+  .nav-menu {
     width: initial;
     margin-left: auto;
   }
-  .nav-list{
+
+  .nav-list {
     display: flex;
     column-gap: 3rem;
   }
-  .nav-link{
+
+  .nav-link {
     color: var(--text-color-light);
   }
-  .nav-link i{
+
+  .nav-link i {
     display: none;
   }
-  .nav-button{
+
+  .nav-button {
     display: inline-block;
   }
-  .active-link{
-    background:none;
+
+  .active-link {
+    background: none;
     box-shadow: none;
     color: var(--first-color);
     font-weight: var(--font-medium);
   }
-  .change-theme{
+
+  .change-theme {
     margin: 0 3rem;
     color: var(--text-color-light);
   }
+
   .scroll-header .nav-link,
-  .scroll-header .change-theme{
+  .scroll-header .change-theme {
     color: var(--text-color);
   }
-  .scroll-header .active-link{
+
+  .scroll-header .active-link {
     color: var(--first-color);
   }
-  .home{
+
+  .home {
     padding-bottom: 0;
   }
-  .home-container{
+
+  .home-container {
     padding-top: 5rem;
     column-gap: 2rem;
   }
-  .home-data{
+
+  .home-data {
     padding-bottom: 4rem;
   }
-  .home-title{
+
+  .home-title {
     margin-bottom: 2rem;
   }
+
   .home-description,
-  .home-search{
+  .home-search {
     margin-bottom: 3rem;
   }
-  .home-value{
+
+  .home-value {
     column-gap: 3.5rem;
   }
-  .logos-container{
+
+  .logos-container {
     display: flex;
     margin: auto;
   }
-  .home-img{
-    width: 472px; 
+
+  .home-img {
+    width: 472px;
     height: 634px;
     border-radius: 236px 236px 12px 12px;
     bottom: -2.5rem;
   }
-  .logos-img img{
+
+  .logos-img img {
     height: 100px;
   }
-  .popular-container{
+
+  .popular-container {
     padding-top: 3rem;
     overflow: visible;
     margin: auto;
   }
-  .popular-card{
+
+  .popular-card {
     padding: 1rem 1rem 2rem !important;
   }
+
   .value-container,
-  .contact-container{
+  .contact-container {
     align-items: flex-start;
     column-gap: 5rem;
   }
+
   .value-img,
-  .contact-img{
+  .contact-img {
     width: 461px;
     height: 601px;
     border-radius: 238px 238px 12px 12px;
   }
+
   .value-img img,
-  .contact-img img{
+  .contact-img img {
     max-width: initial;
     width: 490px;
   }
+
   .value-description,
-  .contact-description{
+  .contact-description {
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
   }
-  .value-accordion-title{
+
+  .value-accordion-title {
     font-size: var(--normal-font-size);
   }
-  .value-accordion-item{
+
+  .value-accordion-item {
     padding: 1.25rem 1.25rem 1.25rem 1rem;
   }
-  .value-accordion-description{
+
+  .value-accordion-description {
     padding-bottom: 1rem;
     font-size: var(--small-font-size);
   }
-  .contact-card-box{
+
+  .contact-card-box {
     margin: 10px 50px 0 50px;
     padding: 28px 1.5rem 1.5rem;
   }
-  .subscribe-container{
+
+  .subscribe-container {
     padding: 4rem 10rem 4.5rem;
     border-radius: 2rem;
     border: 12px solid var(--text-color-light);
   }
-  .subscribe-title{
+
+  .subscribe-title {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
-  .subscribe-description{
+
+  .subscribe-description {
     font-size: var(--normal-font-size);
     padding: 0 8rem;
   }
-  .subscribe-button{
+
+  .subscribe-button {
     font-size: var(--normal-font-size);
   }
-  .footer-content{
+
+  .footer-content {
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
     column-gap: 100px;
   }
-  .footer-upper-content{
+
+  .footer-upper-content {
     margin: auto;
     margin-bottom: 3rem;
   }
-  .footer-links{
-    row-gap:1rem;
+
+  .footer-links {
+    row-gap: 1rem;
   }
-  .footer-info{
+
+  .footer-info {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 2rem;
   }
-  .show-scroll{
+
+  .show-scroll {
     bottom: 3rem;
     right: 3rem;
   }
+
+  .popular-card {
+    zoom: 1.5;
+    height: 350px;
+  }
+
+  .popular-price {
+    font-size: 1rem;
+  }
+
+  .popular-title {
+    font-size: 1rem;
+  }
+
+  .popular-description {
+    font-size: 0.8rem;
+  }
 }
 
-@media screen and (min-width:1040px){
-  .container{
-    margin-left:auto;
+@media screen and (min-width:1040px) {
+  .container {
+    margin-left: auto;
     margin-right: auto;
   }
-  .home-container{
+
+  .home-container {
     column-gap: 4rem;
   }
 }
 
-@media screen and (min-width:2048px){
-  body{
+@media screen and (min-width:2048px) {
+  body {
     zoom: 1.5;
   }
 }
-@media screen and (min-width:3840px){
-  body{
+
+@media screen and (min-width:3840px) {
+  body {
     zoom: 2.5;
   }
 }
